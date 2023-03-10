@@ -1,6 +1,6 @@
 <template>
   <div class="bg-indigo-50">
-    <div class="p-10 mx-auto min-h-screen h-full md:w-6/12 text-center">
+    <div class="p-10 mx-auto min-h-screen h-full lg:w-9/12 xl:w-6/12 text-center">
       <p class="text-5xl mb-5">Data Visualization</p>
       <select v-model="dataset" class="outline outline-offset-2 outline-indigo-500 rounded mb-10">
         <option value="" disabled>Pick a dataset</option>
@@ -24,11 +24,11 @@
         <p>Prelude was measured from the first words spoken by the mindfulness speaker to the first ring of the bell.</p>
         <p>Meditation was measured from the first ring of the bell to the final ring of the bell.</p>
       </div>
-      <div v-else-if="dataset == 'Advisory'">
-          asd
+      <div v-else-if="dataset == 'Urban Stuff'">
+          Coming Soon.
       </div>
       <div class="p-10">
-        Created by <a href="https://www.lucaskchang.com/#/" target="_blank">Lucas Chang</a> | Built with Nuxt.js, Chart.js, and Tailwind CSS
+        Created by <a href="https://www.lucaskchang.com/#/" target="_blank">Lucas Chang</a> | Built with <a href="https://github.com/lukajaa/data-viz" target="_blank">Nuxt.js, Chart.js, and Tailwind CSS</a>
       </div>
     </div>
   </div>
