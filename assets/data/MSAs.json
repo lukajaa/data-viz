@@ -1,0 +1,1162 @@
+{
+    "Whatcom County": {
+      "population": 226847,
+      "lon": -121.9,
+      "lat": 48.83
+    },
+    "Skagit County": {
+      "population": 129523,
+      "lon": -121.78,
+      "lat": 48.48
+    },
+    "Greater Grand Forks": {
+      "population": 104362,
+      "lon": -97.028333333,
+      "lat": 47.926944444
+    },
+    "Seattle metropolitan area": {
+      "population": 4018762,
+      "lon": -122.32,
+      "lat": 47.74
+    },
+    "Kootenai County": {
+      "population": 171362,
+      "lon": -116.7,
+      "lat": 47.68
+    },
+    "Kitsap County": {
+      "population": 275611,
+      "lon": -122.65,
+      "lat": 47.64
+    },
+    "Missoula County": {
+      "population": 117922,
+      "lon": -113.93,
+      "lat": 47.04
+    },
+    "Thurston County": {
+      "population": 294793,
+      "lon": -122.83,
+      "lat": 46.93
+    },
+    "Fargo-Moorhead": {
+      "population": 249843,
+      "lon": -96.783333333,
+      "lat": 46.85
+    },
+    "Bismarck metropolitan area": {
+      "population": 133626,
+      "lon": -100.833333333,
+      "lat": 46.816666666
+    },
+    "Twin Ports": {
+      "population": 291638,
+      "lon": -92.09,
+      "lat": 46.749
+    },
+    "Yakima County": {
+      "population": 256728,
+      "lon": -120.74,
+      "lat": 46.46
+    },
+    "Cowlitz County": {
+      "population": 110730,
+      "lon": -122.68,
+      "lat": 46.19
+    },
+    "Billings metropolitan area": {
+      "population": 184167,
+      "lon": -108.500555555,
+      "lat": 45.783333333
+    },
+    "Portland metropolitan area": {
+      "population": 2512859,
+      "lon": -122.65,
+      "lat": 45.5
+    },
+    "Penobscot County": {
+      "population": 153923,
+      "lon": -68.722466,
+      "lat": 45.171928
+    },
+    "Minneapolis-Saint Paul": {
+      "population": 3690261,
+      "lon": -93.2,
+      "lat": 44.95
+    },
+    "Eau Claire metropolitan area": {
+      "population": 172007,
+      "lon": -91.416667,
+      "lat": 44.916667
+    },
+    "Linn County": {
+      "population": 128610,
+      "lon": -123.09,
+      "lat": 44.63
+    },
+    "Green Bay metropolitan area": {
+      "population": 328268,
+      "lon": -88.015833,
+      "lat": 44.513333
+    },
+    "Mankato metropolitan area": {
+      "population": 103566,
+      "lon": -94,
+      "lat": 44.166666666
+    },
+    "Androscoggin County": {
+      "population": 111139,
+      "lon": -70.217667,
+      "lat": 44.135071
+    },
+    "Winnebago County": {
+      "population": 171730,
+      "lon": -88.64,
+      "lat": 44.06
+    },
+    "Jefferson County": {
+      "population": 116721,
+      "lon": -76.05,
+      "lat": 43.99
+    },
+    "Lane County": {
+      "population": 382971,
+      "lon": -122.88,
+      "lat": 43.95
+    },
+    "Deschutes County": {
+      "population": 198253,
+      "lon": -121.22,
+      "lat": 43.91
+    },
+    "Fond du Lac County": {
+      "population": 104154,
+      "lon": -88.49,
+      "lat": 43.76
+    },
+    "Sheboygan County": {
+      "population": 118034,
+      "lon": -87.66,
+      "lat": 43.72
+    },
+    "Boise metropolitan area": {
+      "population": 764718,
+      "lon": -116.5,
+      "lat": 43.5
+    },
+    "Idaho Falls metropolitan area": {
+      "population": 157429,
+      "lon": -112.05,
+      "lat": 43.5
+    },
+    "Saginaw County": {
+      "population": 190124,
+      "lon": -84.05,
+      "lat": 43.33
+    },
+    "Muskegon County": {
+      "population": 175824,
+      "lon": -86.45,
+      "lat": 43.29
+    },
+    "Milwaukee metropolitan area": {
+      "population": 1574731,
+      "lon": -88.166667,
+      "lat": 43.25
+    },
+    "Madison metropolitan area": {
+      "population": 680796,
+      "lon": -89.592222222,
+      "lat": 43.080277777
+    },
+    "Genesee County": {
+      "population": 406211,
+      "lon": -83.71,
+      "lat": 43.02
+    },
+    "Grand Rapids-Kentwood, MI Metropolitan Statistical Area": {
+      "population": 1087592,
+      "lon": -85.6691,
+      "lat": 42.9703
+    },
+    "Buffalo-Niagara Falls metropolitan area": {
+      "population": 1166902,
+      "lon": -78.85,
+      "lat": 42.9
+    },
+    "Hillsborough County": {
+      "population": 422937,
+      "lon": -71.582741,
+      "lat": 42.895584
+    },
+    "Racine County": {
+      "population": 197727,
+      "lon": -87.76,
+      "lat": 42.78
+    },
+    "Lansing-East Lansing, MI Metropolitan Statistical Area": {
+      "population": 541297,
+      "lon": -84.55269444,
+      "lat": 42.72288889
+    },
+    "Rock County": {
+      "population": 163687,
+      "lon": -89.07,
+      "lat": 42.67
+    },
+    "Capital District": {
+      "population": 899262,
+      "lon": -73.763580555,
+      "lat": 42.661736111
+    },
+    "Twin Falls metropolitan area": {
+      "population": 114283,
+      "lon": -114.47,
+      "lat": 42.58
+    },
+    "Sioux City metropolitan area": {
+      "population": 149940,
+      "lon": -96.4,
+      "lat": 42.5
+    },
+    "Waterloo - Cedar Falls metropolitan area": {
+      "population": 168461,
+      "lon": -92.34,
+      "lat": 42.49
+    },
+    "Tompkins County": {
+      "population": 105740,
+      "lon": -76.47,
+      "lat": 42.45
+    },
+    "Jackson County": {
+      "population": 223259,
+      "lon": -122.74,
+      "lat": 42.42
+    },
+    "Berkshire County": {
+      "population": 129026,
+      "lon": -73.209892,
+      "lat": 42.39613
+    },
+    "Metro Detroit": {
+      "population": 4392041,
+      "lon": -83.215,
+      "lat": 42.358
+    },
+    "Greater Boston": {
+      "population": 4941632,
+      "lon": -71.065,
+      "lat": 42.355
+    },
+    "Medford metropolitan area, Oregon": {
+      "population": 223259,
+      "lon": -122.833333333,
+      "lat": 42.333333333
+    },
+    "Washtenaw County": {
+      "population": 372258,
+      "lon": -83.84,
+      "lat": 42.25
+    },
+    "Calhoun County": {
+      "population": 134310,
+      "lon": -85,
+      "lat": 42.25
+    },
+    "Kalamazoo County": {
+      "population": 261670,
+      "lon": -85.53,
+      "lat": 42.24
+    },
+    "Binghamton, NY Metropolitan Statistical Area": {
+      "population": 247138,
+      "lon": -75.9927652,
+      "lat": 42.2353017
+    },
+    "Kalamazoo-Portage metropolitan area": {
+      "population": 261670,
+      "lon": -85.3524,
+      "lat": 42.1724
+    },
+    "Springfield, Massachusetts metropolitan area": {
+      "population": 699162,
+      "lon": -72.6,
+      "lat": 42.1
+    },
+    "Erie County": {
+      "population": 270876,
+      "lon": -80.1,
+      "lat": 42.1
+    },
+    "Berrien County": {
+      "population": 154316,
+      "lon": -86.59,
+      "lat": 41.94
+    },
+    "Chicago metropolitan area": {
+      "population": 10055638,
+      "lon": -87.65,
+      "lat": 41.899722222
+    },
+    "Ulster County": {
+      "population": 181851,
+      "lon": -74.26,
+      "lat": 41.89
+    },
+    "Providence metropolitan area": {
+      "population": 1676579,
+      "lon": -71.413,
+      "lat": 41.824
+    },
+    "Logan metropolitan area": {
+      "population": 147348,
+      "lon": -111.833,
+      "lat": 41.75
+    },
+    "Barnstable County": {
+      "population": 228996,
+      "lon": -70.301811,
+      "lat": 41.698997
+    },
+    "Toledo metropolitan area": {
+      "population": 646604,
+      "lon": -83.575278,
+      "lat": 41.665556
+    },
+    "Elkhart County": {
+      "population": 207047,
+      "lon": -85.86,
+      "lat": 41.6
+    },
+    "LaPorte County": {
+      "population": 112417,
+      "lon": -86.716666666,
+      "lat": 41.6
+    },
+    "Des Moines metropolitan area": {
+      "population": 709466,
+      "lon": -93.8358,
+      "lat": 41.5551
+    },
+    "New London County": {
+      "population": 268555,
+      "lon": -72.1,
+      "lat": 41.47
+    },
+    "New Haven County": {
+      "population": 864835,
+      "lon": -72.9,
+      "lat": 41.35
+    },
+    "Lycoming County": {
+      "population": 114188,
+      "lon": -77.06,
+      "lat": 41.35
+    },
+    "Cheyenne metropolitan area": {
+      "population": 100512,
+      "lon": -104.7,
+      "lat": 41.333333333
+    },
+    "Laramie County": {
+      "population": 100512,
+      "lon": -104.69,
+      "lat": 41.32
+    },
+    "Omaha-Council Bluffs metropolitan area": {
+      "population": 967604,
+      "lon": -95.92166667,
+      "lat": 41.25972222
+    },
+    "Wyoming Valley": {
+      "population": 567559,
+      "lon": -75.906,
+      "lat": 41.251
+    },
+    "Mahoning Valley": {
+      "population": 541243,
+      "lon": -80.71666667,
+      "lat": 41.25
+    },
+    "Fairfield County": {
+      "population": 957419,
+      "lon": -73.37,
+      "lat": 41.23
+    },
+    "Kankakee County": {
+      "population": 107502,
+      "lon": -87.86,
+      "lat": 41.14
+    },
+    "Ogden-Clearfield metropolitan area": {
+      "population": 694863,
+      "lon": -111.916666666,
+      "lat": 41.133333333
+    },
+    "Akron metropolitan area": {
+      "population": 702219,
+      "lon": -81.51666667,
+      "lat": 41.06666667
+    },
+    "Monroe County": {
+      "population": 168327,
+      "lon": -75.34,
+      "lat": 41.06
+    },
+    "Fort Wayne metropolitan area": {
+      "population": 419601,
+      "lon": -85,
+      "lat": 41
+    },
+    "Centre County": {
+      "population": 158172,
+      "lon": -77.82,
+      "lat": 40.91
+    },
+    "New York metropolitan area": {
+      "population": 20140470,
+      "lon": -74.020277777,
+      "lat": 40.808611111
+    },
+    "Canton-Massillon, OH Metropolitan Statistical Area": {
+      "population": 401574,
+      "lon": -81.466666666,
+      "lat": 40.8
+    },
+    "Allentown-Bethlehem-Easton metropolitan area": {
+      "population": 861889,
+      "lon": -75.403888888,
+      "lat": 40.789444444
+    },
+    "Richland County": {
+      "population": 124936,
+      "lon": -82.54,
+      "lat": 40.78
+    },
+    "Allen County": {
+      "population": 102206,
+      "lon": -84.116666666,
+      "lat": 40.766666666
+    },
+    "Salt Lake City metropolitan area": {
+      "population": 1257936,
+      "lon": -111.8910474,
+      "lat": 40.7607793
+    },
+    "Shasta County": {
+      "population": 182155,
+      "lon": -122.04,
+      "lat": 40.76
+    },
+    "Lima, Ohio, metropolitan area": {
+      "population": 102206,
+      "lon": -84.25,
+      "lat": 40.75
+    },
+    "Larimer County": {
+      "population": 359066,
+      "lon": -105.46,
+      "lat": 40.65
+    },
+    "Weld County": {
+      "population": 328981,
+      "lon": -104.4,
+      "lat": 40.54
+    },
+    "Bloomington-Normal, Illinois": {
+      "population": 170954,
+      "lon": -88.9948,
+      "lat": 40.5026
+    },
+    "McLean County": {
+      "population": 170954,
+      "lon": -88.85,
+      "lat": 40.49
+    },
+    "Cambria County": {
+      "population": 133472,
+      "lon": -78.72,
+      "lat": 40.49
+    },
+    "Blair County": {
+      "population": 127200,
+      "lon": -78.35,
+      "lat": 40.47
+    },
+    "Pittsburgh metropolitan area": {
+      "population": 2370930,
+      "lon": -79.995,
+      "lat": 40.4375
+    },
+    "Berks County": {
+      "population": 428849,
+      "lon": -75.93,
+      "lat": 40.42
+    },
+    "Weirton-Steubenville metropolitan area": {
+      "population": 116903,
+      "lon": -80.6,
+      "lat": 40.4
+    },
+    "Lebanon County": {
+      "population": 143257,
+      "lon": -76.46,
+      "lat": 40.37
+    },
+    "Mercer County": {
+      "population": 387340,
+      "lon": -74.7,
+      "lat": 40.28
+    },
+    "Harrisburg metropolitan area": {
+      "population": 591712,
+      "lon": -76.87,
+      "lat": 40.27
+    },
+    "Delaware County": {
+      "population": 111903,
+      "lon": -85.4,
+      "lat": 40.23
+    },
+    "Champaign-Urbana metropolitan area": {
+      "population": 222538,
+      "lon": -88.25,
+      "lat": 40.1
+    },
+    "Boulder County": {
+      "population": 330758,
+      "lon": -105.36,
+      "lat": 40.09
+    },
+    "Wheeling, WV-OH Metropolitan Statistical Area": {
+      "population": 139513,
+      "lon": -80.7166667,
+      "lat": 40.0666667
+    },
+    "Lancaster County": {
+      "population": 552984,
+      "lon": -76.25,
+      "lat": 40.04
+    },
+    "Columbus metropolitan area": {
+      "population": 2138926,
+      "lon": -83,
+      "lat": 40
+    },
+    "Franklin County": {
+      "population": 155932,
+      "lon": -77.72,
+      "lat": 39.93
+    },
+    "York County": {
+      "population": 456438,
+      "lon": -76.73,
+      "lat": 39.92
+    },
+    "Delaware Valley": {
+      "population": 6245051,
+      "lon": -75.323,
+      "lat": 39.877
+    },
+    "Adams County": {
+      "population": 103852,
+      "lon": -77.22,
+      "lat": 39.87
+    },
+    "Macon County": {
+      "population": 103998,
+      "lon": -88.96,
+      "lat": 39.86
+    },
+    "Springfield, Illinois metropolitan area": {
+      "population": 208640,
+      "lon": -89.65,
+      "lat": 39.8
+    },
+    "Denver metropolitan area": {
+      "population": 2963821,
+      "lon": -104.9849171,
+      "lat": 39.7392166
+    },
+    "Butte County": {
+      "population": 211632,
+      "lon": -121.6,
+      "lat": 39.66
+    },
+    "Hagerstown metropolitan area": {
+      "population": 293844,
+      "lon": -77.7833,
+      "lat": 39.6167
+    },
+    "Morgantown, WV Metropolitan Statistical Area": {
+      "population": 140038,
+      "lon": -79.75,
+      "lat": 39.5
+    },
+    "Atlantic County": {
+      "population": 274534,
+      "lon": -74.64,
+      "lat": 39.47
+    },
+    "Cumberland County": {
+      "population": 154152,
+      "lon": -75.13,
+      "lat": 39.33
+    },
+    "Baltimore metropolitan area": {
+      "population": 2844510,
+      "lon": -76.6077,
+      "lat": 39.2833
+    },
+    "Winchester, VA-WV MSA": {
+      "population": 142632,
+      "lon": -78.166666666,
+      "lat": 39.25
+    },
+    "Manhattan, Kansas metropolitan area": {
+      "population": 134046,
+      "lon": -96.6,
+      "lat": 39.2
+    },
+    "Yuba-Sutter area": {
+      "population": 181208,
+      "lon": -121.626202777,
+      "lat": 39.134791666
+    },
+    "Kansas City metropolitan area": {
+      "population": 2192035,
+      "lon": -94.58,
+      "lat": 39.1
+    },
+    "Kent County": {
+      "population": 181851,
+      "lon": -75.5,
+      "lat": 39.1
+    },
+    "Mesa County": {
+      "population": 155703,
+      "lon": -108.47,
+      "lat": 39.02
+    },
+    "Cincinnati metropolitan area": {
+      "population": 2256884,
+      "lon": -84.5,
+      "lat": 39
+    },
+    "Columbia, Missouri Metropolitan Area": {
+      "population": 210864,
+      "lon": -92.3286,
+      "lat": 38.9516
+    },
+    "Washington metropolitan area": {
+      "population": 6385162,
+      "lon": -77.046666666,
+      "lat": 38.89
+    },
+    "Douglas County": {
+      "population": 118785,
+      "lon": -95.2333,
+      "lat": 38.8667
+    },
+    "Huntington-Ashland metropolitan area": {
+      "population": 359862,
+      "lon": -82.4453,
+      "lat": 38.4192
+    },
+    "Charleston, West Virginia metropolitan area": {
+      "population": 258859,
+      "lon": -81.58333333,
+      "lat": 38.33333333
+    },
+    "Solano County": {
+      "population": 453491,
+      "lon": -121.94,
+      "lat": 38.27
+    },
+    "Louisville metropolitan area": {
+      "population": 1285439,
+      "lon": -85.749444444,
+      "lat": 38.228888888
+    },
+    "Pueblo County": {
+      "population": 168162,
+      "lon": -104.51,
+      "lat": 38.15
+    },
+    "Lexington-Fayette Metropolitan Statistical Area": {
+      "population": 516811,
+      "lon": -84.5,
+      "lat": 38
+    },
+    "San Joaquin County": {
+      "population": 779233,
+      "lon": -121.27,
+      "lat": 37.93
+    },
+    "Greater Richmond Region": {
+      "population": 1314434,
+      "lon": -78.178,
+      "lat": 37.809
+    },
+    "Owensboro, KY Metropolitan Statistical Area": {
+      "population": 121559,
+      "lon": -87.083333333,
+      "lat": 37.75
+    },
+    "Washington County": {
+      "population": 180279,
+      "lon": -113.52,
+      "lat": 37.28
+    },
+    "Madera County": {
+      "population": 156255,
+      "lon": -119.77,
+      "lat": 37.22
+    },
+    "Merced County": {
+      "population": 281202,
+      "lon": -120.71,
+      "lat": 37.19
+    },
+    "Santa Cruz County": {
+      "population": 270861,
+      "lon": -122.01,
+      "lat": 37.03
+    },
+    "Fresno County": {
+      "population": 1008654,
+      "lon": -119.65,
+      "lat": 36.75
+    },
+    "San Juan County": {
+      "population": 121661,
+      "lon": -108.32,
+      "lat": 36.51
+    },
+    "Monterey County": {
+      "population": 439035,
+      "lon": -121.31,
+      "lat": 36.24
+    },
+    "Tulare County": {
+      "population": 473117,
+      "lon": -118.8,
+      "lat": 36.23
+    },
+    "Clark County": {
+      "population": 2265461,
+      "lon": -115.02,
+      "lat": 36.2
+    },
+    "Las Vegas Valley": {
+      "population": 2265461,
+      "lon": -115.184,
+      "lat": 36.1318
+    },
+    "Nashville metropolitan area": {
+      "population": 1989519,
+      "lon": -86.9,
+      "lat": 36.1
+    },
+    "Fayetteville-Springdale-Rogers metropolitan area": {
+      "population": 546725,
+      "lon": -94.160912,
+      "lat": 36.076379
+    },
+    "Hanford-Corcoran, CA Metropolitan Statistical Area": {
+      "population": 152486,
+      "lon": -119.81,
+      "lat": 36.07
+    },
+    "Alamance County": {
+      "population": 171415,
+      "lon": -79.4,
+      "lat": 36.04
+    },
+    "Knoxville metropolitan area": {
+      "population": 879773,
+      "lon": -83.9422,
+      "lat": 35.9729
+    },
+    "Research Triangle": {
+      "population": 2106463,
+      "lon": -78.79,
+      "lat": 35.88
+    },
+    "Mohave County": {
+      "population": 213267,
+      "lon": -113.863055555,
+      "lat": 35.681944444
+    },
+    "Coconino County": {
+      "population": 145101,
+      "lon": -112.1,
+      "lat": 35.633333333
+    },
+    "Pitt County": {
+      "population": 170243,
+      "lon": -77.38,
+      "lat": 35.59
+    },
+    "Santa Fe County": {
+      "population": 154823,
+      "lon": -105.98,
+      "lat": 35.51
+    },
+    "Oklahoma City metropolitan area": {
+      "population": 1425695,
+      "lon": -97.5,
+      "lat": 35.5
+    },
+    "San Luis Obispo County": {
+      "population": 282424,
+      "lon": -120.45,
+      "lat": 35.38
+    },
+    "Fort Smith metropolitan area": {
+      "population": 244310,
+      "lon": -94.3987,
+      "lat": 35.3687
+    },
+    "Wayne County": {
+      "population": 117333,
+      "lon": -78,
+      "lat": 35.36
+    },
+    "Kern County": {
+      "population": 909235,
+      "lon": -118.72,
+      "lat": 35.34
+    },
+    "Charlotte metropolitan area": {
+      "population": 2660329,
+      "lon": -80.84,
+      "lat": 35.23
+    },
+    "Memphis metropolitan area": {
+      "population": 1337779,
+      "lon": -89.9711,
+      "lat": 35.1174
+    },
+    "Albuquerque metropolitan area": {
+      "population": 916791,
+      "lon": -106.61,
+      "lat": 35.1108
+    },
+    "Spartanburg County": {
+      "population": 327997,
+      "lon": -81.99,
+      "lat": 34.93
+    },
+    "Florence-Muscle Shoals metropolitan area": {
+      "population": 150791,
+      "lon": -87.6528,
+      "lat": 34.7836
+    },
+    "Little Rock-North Little Rock-Conway metropolitan area": {
+      "population": 748031,
+      "lon": -92.3311,
+      "lat": 34.7361
+    },
+    "Upstate South Carolina": {
+      "population": 928195,
+      "lon": -82.1833,
+      "lat": 34.7167
+    },
+    "Onslow County": {
+      "population": 204576,
+      "lon": -77.41,
+      "lat": 34.71
+    },
+    "Lawton metropolitan area": {
+      "population": 126652,
+      "lon": -98.476388888,
+      "lat": 34.6625
+    },
+    "Garland County": {
+      "population": 100180,
+      "lon": -93.1275,
+      "lat": 34.583611111
+    },
+    "Decatur Metropolitan Area": {
+      "population": 156494,
+      "lon": -86.9833,
+      "lat": 34.5811
+    },
+    "Yavapai County": {
+      "population": 236209,
+      "lon": -112.54,
+      "lat": 34.561388888
+    },
+    "Santa Barbara County": {
+      "population": 448229,
+      "lon": -120.03,
+      "lat": 34.54
+    },
+    "Ventura County": {
+      "population": 843843,
+      "lon": -119.15,
+      "lat": 34.36
+    },
+    "Hall County": {
+      "population": 203136,
+      "lon": -83.82,
+      "lat": 34.32
+    },
+    "Gainesville": {
+      "population": 203136,
+      "lon": -83.8229,
+      "lat": 34.3003
+    },
+    "Cape Fear": {
+      "population": 285905,
+      "lon": -77.97,
+      "lat": 34.23
+    },
+    "Inland Empire": {
+      "population": 4599839,
+      "lon": -116.93,
+      "lat": 34.1216
+    },
+    "Etowah County": {
+      "population": 103436,
+      "lon": -86.033333333,
+      "lat": 34.05
+    },
+    "Greater Los Angeles Area": {
+      "population": 18644680,
+      "lon": -118,
+      "lat": 34
+    },
+    "Atlanta-Sandy Springs-Alpharetta metropolitan area": {
+      "population": 6089815,
+      "lon": -84.39,
+      "lat": 33.755
+    },
+    "Anniston-Oxford metropolitan area": {
+      "population": 116441,
+      "lon": -85.83,
+      "lat": 33.64
+    },
+    "Grayson County": {
+      "population": 135543,
+      "lon": -96.68,
+      "lat": 33.62
+    },
+    "Myrtle Beach metropolitan area": {
+      "population": 487722,
+      "lon": -79.055,
+      "lat": 33.589
+    },
+    "Texarkana metropolitan area": {
+      "population": 147519,
+      "lon": -94.0675,
+      "lat": 33.437222222
+    },
+    "Phoenix metropolitan area": {
+      "population": 4845832,
+      "lon": -112.04,
+      "lat": 33.17
+    },
+    "San Diego metropolitan area": {
+      "population": 3298634,
+      "lon": -116.60816523,
+      "lat": 33.093400193
+    },
+    "Imperial County": {
+      "population": 179702,
+      "lon": -115.35,
+      "lat": 33.04
+    },
+    "Yuma County": {
+      "population": 203881,
+      "lon": -113.982777777,
+      "lat": 32.786944444
+    },
+    "Dallas-Fort Worth metroplex": {
+      "population": 7637387,
+      "lon": -97.0326,
+      "lat": 32.763
+    },
+    "Auburn-Opelika Metropolitan Statistical Area": {
+      "population": 174241,
+      "lon": -85.4819,
+      "lat": 32.6319
+    },
+    "Warner Robins, Georgia metropolitan area": {
+      "population": 191614,
+      "lon": -83.6,
+      "lat": 32.6
+    },
+    "Smith County": {
+      "population": 233479,
+      "lon": -95.27,
+      "lat": 32.38
+    },
+    "Montgomery metropolitan area": {
+      "population": 386047,
+      "lon": -86.2792,
+      "lat": 32.3617
+    },
+    "Doña Ana County": {
+      "population": 219561,
+      "lon": -106.778333,
+      "lat": 32.312222
+    },
+    "Pima County": {
+      "population": 1043433,
+      "lon": -111.820833333,
+      "lat": 32.065277777
+    },
+    "Cochise County": {
+      "population": 125447,
+      "lon": -109.753611111,
+      "lat": 31.880555555
+    },
+    "Ector County": {
+      "population": 165171,
+      "lon": -102.54,
+      "lat": 31.87
+    },
+    "McLennan County": {
+      "population": 260579,
+      "lon": -97.2,
+      "lat": 31.55
+    },
+    "Mobile metropolitan area": {
+      "population": 430197,
+      "lon": -88.213888888,
+      "lat": 30.786388888
+    },
+    "Baldwin County": {
+      "population": 231767,
+      "lon": -87.74984,
+      "lat": 30.66097
+    },
+    "Bryan-College Station metropolitan area": {
+      "population": 268248,
+      "lon": -96.3406,
+      "lat": 30.6335
+    },
+    "Tangipahoa Parish": {
+      "population": 133157,
+      "lon": -90.40568,
+      "lat": 30.62665
+    },
+    "Tallahassee metropolitan area": {
+      "population": 384298,
+      "lon": -84.2,
+      "lat": 30.3
+    },
+    "Greater Austin": {
+      "population": 2283371,
+      "lon": -97.75,
+      "lat": 30.25
+    },
+    "Bay County": {
+      "population": 175216,
+      "lon": -85.63,
+      "lat": 30.24
+    },
+    "Greater Houston": {
+      "population": 7122240,
+      "lon": -95.38306,
+      "lat": 29.76278
+    },
+    "Greater San Antonio": {
+      "population": 2558143,
+      "lon": -98.493888888,
+      "lat": 29.425
+    },
+    "Marion County": {
+      "population": 375908,
+      "lon": -82.06,
+      "lat": 29.21
+    },
+    "Citrus County": {
+      "population": 153843,
+      "lon": -82.52,
+      "lat": 28.85
+    },
+    "Sumter County": {
+      "population": 129752,
+      "lon": -82.08,
+      "lat": 28.71
+    },
+    "Greater Orlando": {
+      "population": 2673376,
+      "lon": -81.38,
+      "lat": 28.54
+    },
+    "Brevard County": {
+      "population": 606612,
+      "lon": -80.7,
+      "lat": 28.3
+    },
+    "Tampa Bay area": {
+      "population": 3175275,
+      "lon": -82.3,
+      "lat": 28
+    },
+    "Polk County": {
+      "population": 725046,
+      "lon": -81.7,
+      "lat": 27.96
+    },
+    "Webb County": {
+      "population": 267114,
+      "lon": -99.33,
+      "lat": 27.77
+    },
+    "Indian River County": {
+      "population": 159788,
+      "lon": -80.58,
+      "lat": 27.7
+    },
+    "Highlands County": {
+      "population": 101235,
+      "lon": -81.34,
+      "lat": 27.34
+    },
+    "Charlotte County": {
+      "population": 186847,
+      "lon": -81.95,
+      "lat": 26.9
+    },
+    "Lee County": {
+      "population": 760822,
+      "lon": -81.92,
+      "lat": 26.58
+    },
+    "Hidalgo County": {
+      "population": 870781,
+      "lon": -98.18107,
+      "lat": 26.39672
+    },
+    "Cameron County": {
+      "population": 421017,
+      "lon": -97.45,
+      "lat": 26.15
+    },
+    "Miami metropolitan area": {
+      "population": 6138333,
+      "lon": -80.2,
+      "lat": 26.133333333
+    },
+    "Collier County": {
+      "population": 375752,
+      "lon": -81.4,
+      "lat": 26.08
+    },
+    "Honolulu County": {
+      "population": 1016508,
+      "lon": -157.966666666,
+      "lat": 21.466666666
+    },
+    "Maui County": {
+      "population": 164754,
+      "lon": -156.61706,
+      "lat": 20.86774
+    }
+  }

@@ -1,0 +1,602 @@
+[
+    {
+      "msa_1": "Seattle metropolitan area",
+      "msa_2": "Greater Los Angeles Area",
+      "gravity_score": 84775991.6952698,
+      "distance_between": 1484.0375778871016
+    },
+    {
+      "msa_1": "Portland metropolitan area",
+      "msa_2": "Greater Los Angeles Area",
+      "gravity_score": 68044822.17968294,
+      "distance_between": 1269.940460184722
+    },
+    {
+      "msa_1": "Minneapolis-Saint Paul",
+      "msa_2": "Chicago metropolitan area",
+      "gravity_score": 120704681.21284309,
+      "distance_between": 594.0859174952903
+    },
+    {
+      "msa_1": "Minneapolis-Saint Paul",
+      "msa_2": "New York metropolitan area",
+      "gravity_score": 76795876.87865245,
+      "distance_between": 1627.6590750589423
+    },
+    {
+      "msa_1": "Minneapolis-Saint Paul",
+      "msa_2": "Greater Los Angeles Area",
+      "gravity_score": 48632697.03858071,
+      "distance_between": 2416.357891264417
+    },
+    {
+      "msa_1": "Milwaukee metropolitan area",
+      "msa_2": "New York metropolitan area",
+      "gravity_score": 52222773.26980368,
+      "distance_between": 1211.0465906087256
+    },
+    {
+      "msa_1": "Grand Rapids-Kentwood, MI Metropolitan Statistical Area",
+      "msa_2": "New York metropolitan area",
+      "gravity_score": 49574731.73534525,
+      "distance_between": 948.7856588494778
+    },
+    {
+      "msa_1": "Buffalo-Niagara Falls metropolitan area",
+      "msa_2": "New York metropolitan area",
+      "gravity_score": 123599660.50996149,
+      "distance_between": 402.5927134820594
+    },
+    {
+      "msa_1": "Hillsborough County",
+      "msa_2": "New York metropolitan area",
+      "gravity_score": 65780451.381646015,
+      "distance_between": 335.876312026762
+    },
+    {
+      "msa_1": "Metro Detroit",
+      "msa_2": "Chicago metropolitan area",
+      "gravity_score": 234731748.63373,
+      "distance_between": 351.14701328758355
+    },
+    {
+      "msa_1": "Metro Detroit",
+      "msa_2": "New York metropolitan area",
+      "gravity_score": 182587155.05883622,
+      "distance_between": 786.8982283984379
+    },
+    {
+      "msa_1": "Metro Detroit",
+      "msa_2": "Pittsburgh metropolitan area",
+      "gravity_score": 64446922.52484775,
+      "distance_between": 402.5927134820604
+    },
+    {
+      "msa_1": "Metro Detroit",
+      "msa_2": "Delaware Valley",
+      "gravity_score": 74699438.20260464,
+      "distance_between": 753.7799205932123
+    },
+    {
+      "msa_1": "Metro Detroit",
+      "msa_2": "Cincinnati metropolitan area",
+      "gravity_score": 72480782.87775896,
+      "distance_between": 344.12610825150256
+    },
+    {
+      "msa_1": "Metro Detroit",
+      "msa_2": "Washington metropolitan area",
+      "gravity_score": 84635303.2488399,
+      "distance_between": 677.2033380780166
+    },
+    {
+      "msa_1": "Metro Detroit",
+      "msa_2": "Atlanta-Sandy Springs-Alpharetta metropolitan area",
+      "gravity_score": 54931017.25912741,
+      "distance_between": 1004.6128905248729
+    },
+    {
+      "msa_1": "Greater Boston",
+      "msa_2": "Chicago metropolitan area",
+      "gravity_score": 67841046.48242804,
+      "distance_between": 1335.1543848982506
+    },
+    {
+      "msa_1": "Greater Boston",
+      "msa_2": "New York metropolitan area",
+      "gravity_score": 470080921.5037752,
+      "distance_between": 335.876312026762
+    },
+    {
+      "msa_1": "Greater Boston",
+      "msa_2": "Delaware Valley",
+      "gravity_score": 130283741.06979689,
+      "distance_between": 474.93578244624996
+    },
+    {
+      "msa_1": "Greater Boston",
+      "msa_2": "Baltimore metropolitan area",
+      "gravity_score": 61267334.55693094,
+      "distance_between": 538.3606461791929
+    },
+    {
+      "msa_1": "Greater Boston",
+      "msa_2": "Washington metropolitan area",
+      "gravity_score": 93006813.78831132,
+      "distance_between": 677.2033380780174
+    },
+    {
+      "msa_1": "Chicago metropolitan area",
+      "msa_2": "Toledo metropolitan area",
+      "gravity_score": 53033654.970922075,
+      "distance_between": 335.6501573184832
+    },
+    {
+      "msa_1": "Chicago metropolitan area",
+      "msa_2": "New York metropolitan area",
+      "gravity_score": 252526098.1011627,
+      "distance_between": 1103.7662665072382
+    },
+    {
+      "msa_1": "Chicago metropolitan area",
+      "msa_2": "Pittsburgh metropolitan area",
+      "gravity_score": 73453817.27024291,
+      "distance_between": 685.2488567975453
+    },
+    {
+      "msa_1": "Chicago metropolitan area",
+      "msa_2": "Columbus metropolitan area",
+      "gravity_score": 130213373.41544534,
+      "distance_between": 355.9825599603103
+    },
+    {
+      "msa_1": "Chicago metropolitan area",
+      "msa_2": "Delaware Valley",
+      "gravity_score": 104513636.7715795,
+      "distance_between": 1045.161818147141
+    },
+    {
+      "msa_1": "Chicago metropolitan area",
+      "msa_2": "Baltimore metropolitan area",
+      "gravity_score": 60510126.365298785,
+      "distance_between": 962.2892105975295
+    },
+    {
+      "msa_1": "Chicago metropolitan area",
+      "msa_2": "Kansas City metropolitan area",
+      "gravity_score": 74309504.73753852,
+      "distance_between": 636.152627007592
+    },
+    {
+      "msa_1": "Chicago metropolitan area",
+      "msa_2": "Cincinnati metropolitan area",
+      "gravity_score": 142854427.9341011,
+      "distance_between": 338.72042698299305
+    },
+    {
+      "msa_1": "Chicago metropolitan area",
+      "msa_2": "Washington metropolitan area",
+      "gravity_score": 120873759.44098039,
+      "distance_between": 919.8843088645012
+    },
+    {
+      "msa_1": "Chicago metropolitan area",
+      "msa_2": "Louisville metropolitan area",
+      "gravity_score": 82227166.56850642,
+      "distance_between": 375.1056077404275
+    },
+    {
+      "msa_1": "Chicago metropolitan area",
+      "msa_2": "Nashville metropolitan area",
+      "gravity_score": 77736508.84732586,
+      "distance_between": 562.731394219153
+    },
+    {
+      "msa_1": "Chicago metropolitan area",
+      "msa_2": "Charlotte metropolitan area",
+      "gravity_score": 60942896.05581358,
+      "distance_between": 905.634367358886
+    },
+    {
+      "msa_1": "Chicago metropolitan area",
+      "msa_2": "Greater Los Angeles Area",
+      "gravity_score": 92703151.74012555,
+      "distance_between": 2826.6832922130875
+    },
+    {
+      "msa_1": "Chicago metropolitan area",
+      "msa_2": "Atlanta-Sandy Springs-Alpharetta metropolitan area",
+      "gravity_score": 115309206.52755378,
+      "distance_between": 928.4253721154279
+    },
+    {
+      "msa_1": "Chicago metropolitan area",
+      "msa_2": "Dallas-Fort Worth metroplex",
+      "gravity_score": 95763978.05554491,
+      "distance_between": 1339.9276961871217
+    },
+    {
+      "msa_1": "Chicago metropolitan area",
+      "msa_2": "Greater Houston",
+      "gravity_score": 79902150.90483512,
+      "distance_between": 1518.6668647674662
+    },
+    {
+      "msa_1": "Chicago metropolitan area",
+      "msa_2": "Miami metropolitan area",
+      "gravity_score": 60250721.29276131,
+      "distance_between": 1788.1576699432715
+    },
+    {
+      "msa_1": "Providence metropolitan area",
+      "msa_2": "Delaware Valley",
+      "gravity_score": 64058926.41977878,
+      "distance_between": 406.806940002247
+    },
+    {
+      "msa_1": "Mahoning Valley",
+      "msa_2": "New York metropolitan area",
+      "gravity_score": 51831700.763482936,
+      "distance_between": 519.2470708158631
+    },
+    {
+      "msa_1": "Akron metropolitan area",
+      "msa_2": "New York metropolitan area",
+      "gravity_score": 55055446.028833166,
+      "distance_between": 602.0512414806368
+    },
+    {
+      "msa_1": "New York metropolitan area",
+      "msa_2": "Pittsburgh metropolitan area",
+      "gravity_score": 206033902.15098017,
+      "distance_between": 425.84541784252355
+    },
+    {
+      "msa_1": "New York metropolitan area",
+      "msa_2": "Columbus metropolitan area",
+      "gravity_score": 105442477.6793338,
+      "distance_between": 766.2962251344845
+    },
+    {
+      "msa_1": "New York metropolitan area",
+      "msa_2": "Cincinnati metropolitan area",
+      "gravity_score": 97541970.85600357,
+      "distance_between": 864.7121168931913
+    },
+    {
+      "msa_1": "New York metropolitan area",
+      "msa_2": "Washington metropolitan area",
+      "gravity_score": 567508592.977075,
+      "distance_between": 341.5236437338693
+    },
+    {
+      "msa_1": "New York metropolitan area",
+      "msa_2": "Louisville metropolitan area",
+      "gravity_score": 55113496.63379173,
+      "distance_between": 975.5260997489976
+    },
+    {
+      "msa_1": "New York metropolitan area",
+      "msa_2": "Greater Richmond Region",
+      "gravity_score": 113548168.70319,
+      "distance_between": 482.02168214062317
+    },
+    {
+      "msa_1": "New York metropolitan area",
+      "msa_2": "Nashville metropolitan area",
+      "gravity_score": 66861974.1975712,
+      "distance_between": 1140.446608599783
+    },
+    {
+      "msa_1": "New York metropolitan area",
+      "msa_2": "Research Triangle",
+      "gravity_score": 121244323.55311327,
+      "distance_between": 658.320431744206
+    },
+    {
+      "msa_1": "New York metropolitan area",
+      "msa_2": "Charlotte metropolitan area",
+      "gravity_score": 125390354.11977594,
+      "distance_between": 767.2551830577869
+    },
+    {
+      "msa_1": "New York metropolitan area",
+      "msa_2": "Greater Los Angeles Area",
+      "gravity_score": 116416389.84235212,
+      "distance_between": 3923.606999673614
+    },
+    {
+      "msa_1": "New York metropolitan area",
+      "msa_2": "Atlanta-Sandy Springs-Alpharetta metropolitan area",
+      "gravity_score": 157633098.4781505,
+      "distance_between": 1183.8360155640157
+    },
+    {
+      "msa_1": "New York metropolitan area",
+      "msa_2": "Dallas-Fort Worth metroplex",
+      "gravity_score": 99688535.9578553,
+      "distance_between": 2243.7078171540975
+    },
+    {
+      "msa_1": "New York metropolitan area",
+      "msa_2": "Greater Houston",
+      "gravity_score": 93129965.55617814,
+      "distance_between": 2271.2216628361475
+    },
+    {
+      "msa_1": "New York metropolitan area",
+      "msa_2": "Greater Orlando",
+      "gravity_score": 65219153.61157195,
+      "distance_between": 1480.9096338343577
+    },
+    {
+      "msa_1": "New York metropolitan area",
+      "msa_2": "Tampa Bay area",
+      "gravity_score": 72777670.0668315,
+      "distance_between": 1522.939350361597
+    },
+    {
+      "msa_1": "New York metropolitan area",
+      "msa_2": "Miami metropolitan area",
+      "gravity_score": 113602363.87381321,
+      "distance_between": 1653.1363229243482
+    },
+    {
+      "msa_1": "Salt Lake City metropolitan area",
+      "msa_2": "Greater Los Angeles Area",
+      "gravity_score": 54516102.95344481,
+      "distance_between": 911.2677085125002
+    },
+    {
+      "msa_1": "Pittsburgh metropolitan area",
+      "msa_2": "Delaware Valley",
+      "gravity_score": 95320179.22497177,
+      "distance_between": 360.727229927642
+    },
+    {
+      "msa_1": "Columbus metropolitan area",
+      "msa_2": "Washington metropolitan area",
+      "gravity_score": 57148689.899268866,
+      "distance_between": 564.0113778105169
+    },
+    {
+      "msa_1": "Delaware Valley",
+      "msa_2": "Greater Richmond Region",
+      "gravity_score": 62302216.84230955,
+      "distance_between": 344.2835868423849
+    },
+    {
+      "msa_1": "Delaware Valley",
+      "msa_2": "Research Triangle",
+      "gravity_score": 60342204.63212396,
+      "distance_between": 518.3829231452607
+    },
+    {
+      "msa_1": "Delaware Valley",
+      "msa_2": "Charlotte metropolitan area",
+      "gravity_score": 60011088.59190715,
+      "distance_between": 628.2689048857713
+    },
+    {
+      "msa_1": "Delaware Valley",
+      "msa_2": "Atlanta-Sandy Springs-Alpharetta metropolitan area",
+      "gravity_score": 69773900.93918459,
+      "distance_between": 1048.1394488559106
+    },
+    {
+      "msa_1": "Denver metropolitan area",
+      "msa_2": "Greater Los Angeles Area",
+      "gravity_score": 72117628.47010602,
+      "distance_between": 1367.3638280670045
+    },
+    {
+      "msa_1": "Cincinnati metropolitan area",
+      "msa_2": "Washington metropolitan area",
+      "gravity_score": 54352161.851300955,
+      "distance_between": 619.0533863679537
+    },
+    {
+      "msa_1": "Washington metropolitan area",
+      "msa_2": "Research Triangle",
+      "gravity_score": 92199111.03531542,
+      "distance_between": 345.3455551706934
+    },
+    {
+      "msa_1": "Washington metropolitan area",
+      "msa_2": "Charlotte metropolitan area",
+      "gravity_score": 89680604.16955005,
+      "distance_between": 427.94434302984104
+    },
+    {
+      "msa_1": "Washington metropolitan area",
+      "msa_2": "Greater Los Angeles Area",
+      "gravity_score": 49444472.83510008,
+      "distance_between": 3685.2226566337954
+    },
+    {
+      "msa_1": "Washington metropolitan area",
+      "msa_2": "Atlanta-Sandy Springs-Alpharetta metropolitan area",
+      "gravity_score": 88356696.27681299,
+      "distance_between": 842.5221882271346
+    },
+    {
+      "msa_1": "Washington metropolitan area",
+      "msa_2": "Miami metropolitan area",
+      "gravity_score": 54933722.94005102,
+      "distance_between": 1363.7628615005892
+    },
+    {
+      "msa_1": "San Joaquin County",
+      "msa_2": "Greater Los Angeles Area",
+      "gravity_score": 78742700.28238672,
+      "distance_between": 430.0980885682939
+    },
+    {
+      "msa_1": "Monterey County",
+      "msa_2": "Greater Los Angeles Area",
+      "gravity_score": 60751037.84050731,
+      "distance_between": 352.281275815912
+    },
+    {
+      "msa_1": "Clark County",
+      "msa_2": "Greater Los Angeles Area",
+      "gravity_score": 225776979.5736719,
+      "distance_between": 352.2812758159138
+    },
+    {
+      "msa_1": "Clark County",
+      "msa_2": "Phoenix metropolitan area",
+      "gravity_score": 62620934.17755902,
+      "distance_between": 432.2155750955506
+    },
+    {
+      "msa_1": "Clark County",
+      "msa_2": "San Diego metropolitan area",
+      "gravity_score": 57517072.28878575,
+      "distance_between": 345.9360365711415
+    },
+    {
+      "msa_1": "Las Vegas Valley",
+      "msa_2": "Greater Los Angeles Area",
+      "gravity_score": 225776979.5736719,
+      "distance_between": 352.2812758159138
+    },
+    {
+      "msa_1": "Las Vegas Valley",
+      "msa_2": "Phoenix metropolitan area",
+      "gravity_score": 62620934.17755902,
+      "distance_between": 432.2155750955506
+    },
+    {
+      "msa_1": "Las Vegas Valley",
+      "msa_2": "San Diego metropolitan area",
+      "gravity_score": 57517072.28878575,
+      "distance_between": 345.9360365711415
+    },
+    {
+      "msa_1": "Nashville metropolitan area",
+      "msa_2": "Atlanta-Sandy Springs-Alpharetta metropolitan area",
+      "gravity_score": 76952531.22600782,
+      "distance_between": 380.5912879385819
+    },
+    {
+      "msa_1": "Research Triangle",
+      "msa_2": "Atlanta-Sandy Springs-Alpharetta metropolitan area",
+      "gravity_score": 51436843.584640816,
+      "distance_between": 596.0079290752409
+    },
+    {
+      "msa_1": "Oklahoma City metropolitan area",
+      "msa_2": "Dallas-Fort Worth metroplex",
+      "gravity_score": 80606657.35107444,
+      "distance_between": 333.584779933676
+    },
+    {
+      "msa_1": "Charlotte metropolitan area",
+      "msa_2": "Atlanta-Sandy Springs-Alpharetta metropolitan area",
+      "gravity_score": 85823258.35640448,
+      "distance_between": 430.5529405892342
+    },
+    {
+      "msa_1": "Inland Empire",
+      "msa_2": "Phoenix metropolitan area",
+      "gravity_score": 123192453.379842,
+      "distance_between": 387.1726610495086
+    },
+    {
+      "msa_1": "Greater Los Angeles Area",
+      "msa_2": "Atlanta-Sandy Springs-Alpharetta metropolitan area",
+      "gravity_score": 55871293.46776968,
+      "distance_between": 3140.064008698516
+    },
+    {
+      "msa_1": "Greater Los Angeles Area",
+      "msa_2": "Phoenix metropolitan area",
+      "gravity_score": 257608778.6629998,
+      "distance_between": 567.2545281442466
+    },
+    {
+      "msa_1": "Greater Los Angeles Area",
+      "msa_2": "Dallas-Fort Worth metroplex",
+      "gravity_score": 106878479.57988955,
+      "distance_between": 1967.476339043085
+    },
+    {
+      "msa_1": "Greater Los Angeles Area",
+      "msa_2": "Pima County",
+      "gravity_score": 62046049.95788659,
+      "distance_between": 689.4479159557183
+    },
+    {
+      "msa_1": "Greater Los Angeles Area",
+      "msa_2": "Greater Houston",
+      "gravity_score": 88576033.6680793,
+      "distance_between": 2245.024068004437
+    },
+    {
+      "msa_1": "Atlanta-Sandy Springs-Alpharetta metropolitan area",
+      "msa_2": "Dallas-Fort Worth metroplex",
+      "gravity_score": 70220281.72822833,
+      "distance_between": 1223.422744696123
+    },
+    {
+      "msa_1": "Atlanta-Sandy Springs-Alpharetta metropolitan area",
+      "msa_2": "Greater Houston",
+      "gravity_score": 71384499.26287946,
+      "distance_between": 1138.0796178313758
+    },
+    {
+      "msa_1": "Atlanta-Sandy Springs-Alpharetta metropolitan area",
+      "msa_2": "Greater Orlando",
+      "gravity_score": 59279500.9342056,
+      "distance_between": 625.7873457009371
+    },
+    {
+      "msa_1": "Atlanta-Sandy Springs-Alpharetta metropolitan area",
+      "msa_2": "Tampa Bay area",
+      "gravity_score": 72395335.27479881,
+      "distance_between": 588.0276816673253
+    },
+    {
+      "msa_1": "Atlanta-Sandy Springs-Alpharetta metropolitan area",
+      "msa_2": "Miami metropolitan area",
+      "gravity_score": 82995636.5360345,
+      "distance_between": 869.0972494675171
+    },
+    {
+      "msa_1": "Phoenix metropolitan area",
+      "msa_2": "San Diego metropolitan area",
+      "gravity_score": 98005803.2173686,
+      "distance_between": 373.0011710876041
+    },
+    {
+      "msa_1": "Phoenix metropolitan area",
+      "msa_2": "Dallas-Fort Worth metroplex",
+      "gravity_score": 50753071.69541478,
+      "distance_between": 1409.8996055052605
+    },
+    {
+      "msa_1": "Dallas-Fort Worth metroplex",
+      "msa_2": "Greater Houston",
+      "gravity_score": 253134019.70259833,
+      "distance_between": 384.67911279114725
+    },
+    {
+      "msa_1": "Dallas-Fort Worth metroplex",
+      "msa_2": "Greater San Antonio",
+      "gravity_score": 123676008.15378611,
+      "distance_between": 347.06453169246385
+    },
+    {
+      "msa_1": "Dallas-Fort Worth metroplex",
+      "msa_2": "Miami metropolitan area",
+      "gravity_score": 48566440.56661605,
+      "distance_between": 1780.163609356212
+    },
+    {
+      "msa_1": "Greater Houston",
+      "msa_2": "Miami metropolitan area",
+      "gravity_score": 53950953.7790498,
+      "distance_between": 1515.4252262842801
+    }
+  ]

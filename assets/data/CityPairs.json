@@ -1,0 +1,50 @@
+{
+    "data": {
+      "labels": [
+        "New York metropolitan area - Mercer County",
+        "Clark County - Las Vegas Valley",
+        "Hillsborough County - Greater Boston",
+        "Metro Detroit - Washtenaw County",
+        "York County - Baltimore metropolitan area",
+        "Delaware Valley - Kent County",
+        "Seattle metropolitan area - Kitsap County",
+        "Chicago metropolitan area - Kankakee County",
+        "Delaware Valley - Cumberland County",
+        "New York metropolitan area - Delaware Valley"
+      ],
+      "datasets": [
+        {
+          "label": "Score",
+          "backgroundColor": "#ef4444",
+          "data": [
+            7801209649800.0,
+            5132313542521.0,
+            2089999013184.0,
+            1634972398578.0,
+            1298342455380.0,
+            1135668769401.0,
+            1107615013582.0,
+            1081001196276.0,
+            962687101752.0,
+            895555066500.1771
+          ]
+        }
+      ]
+    },
+    "options": {
+      "responsive": true,
+      "scales": {
+        "y": {
+          "title": {
+            "display": true,
+            "text": "Gravity Score"
+          }
+        },
+        "x": [{
+            "ticks": {
+                "display": false
+            }
+        }]
+      }
+    }
+  }

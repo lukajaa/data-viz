@@ -1,0 +1,50 @@
+{
+    "data": {
+      "labels": [
+        "New York metropolitan area - Washington metropolitan area",
+        "Greater Boston - New York metropolitan area",
+        "Greater Los Angeles Area - Phoenix metropolitan area",
+        "Dallas-Fort Worth metroplex - Greater Houston",
+        "Metro Detroit - Chicago metropolitan area",
+        "Clark County - Greater Los Angeles Area",
+        "Las Vegas Valley - Greater Los Angeles Area",
+        "New York metropolitan area - Pittsburgh metropolitan area",
+        "Metro Detroit - New York metropolitan area",
+        "Chicago metropolitan area - Cincinnati metropolitan area"
+      ],
+      "datasets": [
+        {
+          "label": "Prelude",
+          "backgroundColor": "#ef4444",
+          "data": [
+            567508592.977075,
+            470080921.5037752,
+            257608778.6629998,
+            253134019.70259833,
+            234731748.63373,
+            225776979.5736719,
+            225776979.5736719,
+            206033902.15098017,
+            182587155.05883622,
+            142854427.9341011
+          ]
+        }
+      ]
+    },
+    "options": {
+      "responsive": true,
+      "scales": {
+        "y": {
+          "title": {
+            "display": true,
+            "text": "Gravity Score"
+          }
+        },
+        "x": [{
+            "ticks": {
+                "display": false
+            }
+        }]
+      }
+    }
+  }
