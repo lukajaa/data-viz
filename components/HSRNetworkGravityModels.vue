@@ -9,17 +9,15 @@
       :show-labels="false"
     >
     </VueMultiselect>
-    <p class="mt-5 font-bold">Score: {{ network_score }}</p>
+    <p class="mt-5 font-bold">Score: {{ network_score.toLocaleString("en-US") }}</p>
     <p class="mt-5 font-bold">Stations: {{ selected_csas.length }}</p>
-    <p class="mt-5 font-bold">Average City Distance: {{ average_distance }}</p>
-    <p class="mt-5 font-bold">Average Gravity: {{ average_gravity }}</p>
 
     <div
       v-for="csa in selected_csas"
       :key="csa"
     >
       <p class="mt-5">{{ csa }}</p>
-      <p>Population: {{ CSAs[csa]['Population'] }}</p>
+      <p>Population: {{ CSAs[csa]['Population'].toLocaleString("en-US") }}</p>
     </div>
   </div>
 </template>
@@ -50,14 +48,11 @@ function deg2rad(deg : number) {
   return deg * (Math.PI/180)
 }
 
-const average_gravity = ref(0)
-const average_distance = ref(0)
-
 const network_score = computed(function () {
     if (selected_csas.value.length <= 1) {
         return 0
     }
-    const done_csas = []
+    const done_csas : string[] = []
     var score = 0
     var total_distance = 0
     // loop each selected CSA
@@ -71,23 +66,20 @@ const network_score = computed(function () {
             }
             var distance_between = getDistanceFromLatLonInKm(csa_data['Latitude'], csa_data['Longitude'], csa2_data['Latitude'], csa2_data['Longitude'])
             total_distance += distance_between
-            if (distance_between > 1500) {
-              continue
-            }
+
             var modifier = 1
             var gravity = csa_data["Population"]**0.8 * csa2_data["Population"]**0.8 / distance_between ** 2
             if (distance_between <= 400) {
               modifier = distance_between / 400
-            } else {
+            } else if (distance_between <= 1000) {
               modifier = 1 - distance_between / 1500
+            } else {
+              modifier = 0.1
             }
             gravity = gravity * modifier
             score += gravity
           }
     }
-
-    average_gravity.value = score / selected_csas.value.length
-    average_distance.value = total_distance / selected_csas.value.length
 
     const nodes = selected_csas.value.length
     const multiplier = (- 10) / (1 + Math.E**(2/3 * nodes - 5)) + 10
