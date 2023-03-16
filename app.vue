@@ -3,13 +3,14 @@
     <div class="p-10 mx-auto min-h-screen h-full lg:w-9/12 xl:w-6/12 text-center">
       <!-- Header -->
       <p class="text-5xl mb-5">Data Visualization</p>
-      <select v-model="dataset" class="outline outline-offset-2 outline-indigo-500 rounded mb-10">
+      <select v-model="dataset" class="outline outline-offset-2 outline-indigo-500 rounded mb-10 text-center">
         <option value="" disabled>Pick a dataset</option>
         <option disabled>Personal</option>
         <option>Mindfulness</option>
         <option disabled>Urbanism</option>
         <option>Gravity Models</option>
         <option>HSR Gravity Models</option>
+        <option>HSR Network Gravity Models</option>
       </select>
 
       <!-- Content -->
@@ -19,6 +20,7 @@
       <Mindfulness v-else-if="dataset == 'Mindfulness'"/>
       <GravityModels v-else-if="dataset == 'Gravity Models'"/>
       <HSRGravityModels v-else-if="dataset == 'HSR Gravity Models'"/>
+      <HSRNetworkGravityModels v-else-if="dataset == 'HSR Network Gravity Models'"/>
 
       <!-- Footer -->
       <div class="p-10">

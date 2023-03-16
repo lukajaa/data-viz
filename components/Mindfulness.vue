@@ -14,7 +14,7 @@
 
 <script setup lang="ts">
 // data
-import MindfulnessData from '../assets/data/Mindfulness.json'
+import MindfulnessData from '../assets/data/graphs/Mindfulness.json'
 // chart.js
 import { Bar } from 'vue-chartjs'
 import { Chart as ChartJS, Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale } from 'chart.js'

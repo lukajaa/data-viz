@@ -8,7 +8,7 @@
   
 <script setup lang="ts">
 // data
-import CityPairs from '../assets/data/HSRCityPairs.json'
+import CityPairs from '../assets/data/graphs/HSRCityPairs.json'
 // chart.js
 import { Bar } from 'vue-chartjs'
 import { Chart as ChartJS, Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale } from 'chart.js'
