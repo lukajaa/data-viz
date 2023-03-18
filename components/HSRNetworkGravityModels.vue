@@ -1,36 +1,55 @@
 <template>
   <div>
-    <VueMultiselect 
+    <Multiselect 
       v-model="selected_csas"
       :options="cities"
       class="outline outline-offset-2 outline-indigo-500 rounded mb-10 text-center"
-      multiple
-      :close-on-select="false"
-      :show-labels="false"
-    >
-    </VueMultiselect>
-    <p class="mt-5 font-bold">Score: {{ network_score }}</p>
+      mode="tags"
+      :closeOnSelect="false"
+      :searchable="true"
+      style="z-index: 10000"
+    />
+    <p class="mt-5 font-bold">Score: {{ Math.round(network_score).toLocaleString("en-US") }}</p>
     <p class="mt-5 font-bold">Stations: {{ selected_csas.length }}</p>
-    <p class="mt-5 font-bold">Average City Distance: {{ average_distance }}</p>
-    <p class="mt-5 font-bold">Average Gravity: {{ average_gravity }}</p>
 
-    <div
-      v-for="csa in selected_csas"
-      :key="csa"
-    >
-      <p class="mt-5">{{ csa }}</p>
-      <p>Population: {{ CSAs[csa]['Population'] }}</p>
+    <div style="height:500px; width: 100%" class="mt-5">
+      <l-map 
+        ref="map" 
+        :zoom="zoom" 
+        :center="[40, -98]" 
+        :useGlobalLeaflet="false" 
+        style="background-color:rgb(238, 242, 255);"
+        :options="{ zoomControl: false, scrollWheelZoom: false, dragging: false, doubleClickZoom: false, touchZoom: false, }"
+      >
+        <l-geo-json :geojson="us_map" :options-style="geoJsonStyles" />
+        <l-circle-marker
+          v-for="csa in selected_csas"
+          :key="csa"
+          :lat-lng="[CSAs[csa]['Latitude'], CSAs[csa]['Longitude']]" 
+          :radius="CSAs[csa]['Population']**0.75 / 10000"
+          :options="{ fillColor: '#a855f7', fillOpacity: 0.5, color: '#a855f7', weight: 1 }"
+        >
+          <l-popup class="text-center"> {{ csa }} <br /> {{ CSAs[csa]['Population'].toLocaleString("en-US") }} </l-popup>
+        </l-circle-marker>
+      </l-map>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
+//i import data
 import CSAs from '../assets/data/CSAs.json'
 // import vue multiselect
-import VueMultiselect from 'vue-multiselect'
+import Multiselect from '@vueform/multiselect'
+// import leaflet
+import "leaflet/dist/leaflet.css";
+import { LMap, LGeoJson, LCircleMarker, LPopup, LPolyline } from "@vue-leaflet/vue-leaflet";
+
+import us_map from '../assets/geojson/us_outline.json';
 
 const cities = Object.keys(CSAs)
 const selected_csas = ref([])
+const zoom = ref(4) 
 
 function getDistanceFromLatLonInKm(lat1 : number, lon1 : number, lat2 : number, lon2 : number) {
   var R = 6371; // Radius of the earth in km
@@ -50,14 +69,18 @@ function deg2rad(deg : number) {
   return deg * (Math.PI/180)
 }
 
-const average_gravity = ref(0)
-const average_distance = ref(0)
+const geoJsonStyles = {
+  fillColor: "#c7d2fe",
+  fillOpacity: 1,
+  color: "#fff",
+  weight: 1,
+}
 
 const network_score = computed(function () {
     if (selected_csas.value.length <= 1) {
         return 0
     }
-    const done_csas = []
+    const done_csas : string[] = []
     var score = 0
     var total_distance = 0
     // loop each selected CSA
@@ -71,28 +94,25 @@ const network_score = computed(function () {
             }
             var distance_between = getDistanceFromLatLonInKm(csa_data['Latitude'], csa_data['Longitude'], csa2_data['Latitude'], csa2_data['Longitude'])
             total_distance += distance_between
-            if (distance_between > 1500) {
-              continue
-            }
+
             var modifier = 1
             var gravity = csa_data["Population"]**0.8 * csa2_data["Population"]**0.8 / distance_between ** 2
             if (distance_between <= 400) {
               modifier = distance_between / 400
+            } else if (distance_between <= 1000) {
+              modifier = 1 - distance_between / 1000
             } else {
-              modifier = 1 - distance_between / 1500
+              modifier = 0.1
             }
             gravity = gravity * modifier
             score += gravity
           }
     }
 
-    average_gravity.value = score / selected_csas.value.length
-    average_distance.value = total_distance / selected_csas.value.length
-
     const nodes = selected_csas.value.length
-    const multiplier = (- 10) / (1 + Math.E**(2/3 * nodes - 5)) + 10
+    const multiplier = (- 5) / (1 + Math.E**(2/3 * nodes - 5)) + 10
     return multiplier * score
 })
 </script>
 
-<style src="vue-multiselect/dist/vue-multiselect.css"></style>
+<style src="@vueform/multiselect/themes/default.css"></style>
