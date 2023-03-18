@@ -1,34 +1,55 @@
 <template>
   <div>
-    <VueMultiselect 
+    <Multiselect 
       v-model="selected_csas"
       :options="cities"
       class="outline outline-offset-2 outline-indigo-500 rounded mb-10 text-center"
-      multiple
-      :close-on-select="false"
-      :show-labels="false"
-    >
-    </VueMultiselect>
-    <p class="mt-5 font-bold">Score: {{ network_score.toLocaleString("en-US") }}</p>
+      mode="tags"
+      :closeOnSelect="false"
+      :searchable="true"
+      style="z-index: 10000"
+    />
+    <p class="mt-5 font-bold">Score: {{ Math.round(network_score).toLocaleString("en-US") }}</p>
     <p class="mt-5 font-bold">Stations: {{ selected_csas.length }}</p>
 
-    <div
-      v-for="csa in selected_csas"
-      :key="csa"
-    >
-      <p class="mt-5">{{ csa }}</p>
-      <p>Population: {{ CSAs[csa]['Population'].toLocaleString("en-US") }}</p>
+    <div style="height:500px; width: 100%" class="mt-5">
+      <l-map 
+        ref="map" 
+        :zoom="zoom" 
+        :center="[40, -98]" 
+        :useGlobalLeaflet="false" 
+        style="background-color:rgb(238, 242, 255);"
+        :options="{ zoomControl: false, scrollWheelZoom: false, dragging: false, doubleClickZoom: false, touchZoom: false, }"
+      >
+        <l-geo-json :geojson="us_map" :options-style="geoJsonStyles" />
+        <l-circle-marker
+          v-for="csa in selected_csas"
+          :key="csa"
+          :lat-lng="[CSAs[csa]['Latitude'], CSAs[csa]['Longitude']]" 
+          :radius="CSAs[csa]['Population']**0.75 / 10000"
+          :options="{ fillColor: '#a855f7', fillOpacity: 0.5, color: '#a855f7', weight: 1 }"
+        >
+          <l-popup class="text-center"> {{ csa }} <br /> {{ CSAs[csa]['Population'].toLocaleString("en-US") }} </l-popup>
+        </l-circle-marker>
+      </l-map>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
+//i import data
 import CSAs from '../assets/data/CSAs.json'
 // import vue multiselect
-import VueMultiselect from 'vue-multiselect'
+import Multiselect from '@vueform/multiselect'
+// import leaflet
+import "leaflet/dist/leaflet.css";
+import { LMap, LGeoJson, LCircleMarker, LPopup, LPolyline } from "@vue-leaflet/vue-leaflet";
+
+import us_map from '../assets/geojson/us_outline.json';
 
 const cities = Object.keys(CSAs)
 const selected_csas = ref([])
+const zoom = ref(4) 
 
 function getDistanceFromLatLonInKm(lat1 : number, lon1 : number, lat2 : number, lon2 : number) {
   var R = 6371; // Radius of the earth in km
@@ -46,6 +67,13 @@ function getDistanceFromLatLonInKm(lat1 : number, lon1 : number, lat2 : number, 
 
 function deg2rad(deg : number) {
   return deg * (Math.PI/180)
+}
+
+const geoJsonStyles = {
+  fillColor: "#c7d2fe",
+  fillOpacity: 1,
+  color: "#fff",
+  weight: 1,
 }
 
 const network_score = computed(function () {
@@ -72,7 +100,7 @@ const network_score = computed(function () {
             if (distance_between <= 400) {
               modifier = distance_between / 400
             } else if (distance_between <= 1000) {
-              modifier = 1 - distance_between / 1500
+              modifier = 1 - distance_between / 1000
             } else {
               modifier = 0.1
             }
@@ -82,9 +110,9 @@ const network_score = computed(function () {
     }
 
     const nodes = selected_csas.value.length
-    const multiplier = (- 10) / (1 + Math.E**(2/3 * nodes - 5)) + 10
+    const multiplier = (- 5) / (1 + Math.E**(2/3 * nodes - 5)) + 10
     return multiplier * score
 })
 </script>
 
-<style src="vue-multiselect/dist/vue-multiselect.css"></style>
+<style src="@vueform/multiselect/themes/default.css"></style>
