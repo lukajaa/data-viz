@@ -17,10 +17,10 @@
       <l-map 
         ref="map" 
         :zoom="zoom" 
-        :center="[40, -98]" 
+        :center="[39.8283, -98.5795]"
         :useGlobalLeaflet="false" 
         style="background-color:rgb(238, 242, 255);"
-        :options="{ zoomControl: false, scrollWheelZoom: false, dragging: false, doubleClickZoom: false, touchZoom: false, }"
+        :options="{ scrollWheelZoom: false, maxBounds: bounds, maxBoundsViscosity: 1.0, minZoom: 4 }"
       >
         <l-geo-json :geojson="us_map" :options="geoJsonStyles" />
         <l-polyline
@@ -40,6 +40,16 @@
         </l-circle-marker>
       </l-map>
     </div>
+    <p class="mt-5 font-bold">What is this?</p>
+    <p>This is an interactive map that creates a hypothetical high speed rail network given a list of combined statistical areas. The overall network score is calculated using gravity models. The network path is calculated using Kruskal's Algorithm to find the minimum spanning tree.</p>
+    <p class="mt-5 font-bold">How is network score calculated?</p>
+    <p>A gravity model is created between each city in the network with an intial equation of (population_of_CSA_1^0.8 * population_of_CSA_2^0.8) / distance_between_CSAs. Next, a distance modifier was calculated with an optimal distance of 250 miles (400 km) and a minimum of 0.1 for distant areas. This multiplier was applied to each of the pairs and the resulting scores were summed. Finally, an overall multiplier was applied according to Metcalfe's Law. The multiplier follows a sigmoid curve that maxes out at around 15 stations.</p>
+    <p class="mt-5 font-bold">How is the network path calculated?</p>
+    <p>The network path is calculated using Kruskal's Algorithm to find the minimum spanning tree. The algorithm is given a graph with each CSA as a vertex and each edge is weighted by the distance between the two connected CSAs. The algorithm then finds the minimum spanning tree by adding the lowest weighted edge that does not create a cycle. The algorithm is run until all vertices are connected.</p>
+    <p class="mt-5 font-bold">Problems</p>
+    <p>Adding too many cities too quickly can break the map.</p>
+    <p class="mt-5 font-bold">Hypothetical HSR Network with every CSA</p>
+    <img class="mx-auto" src="../assets/images/full_map.png" alt="hsr_network" />
   </div>
 </template>
 
@@ -58,10 +68,11 @@ const cities = Object.keys(CSAs)
 const selected_csas = ref([])
 const zoom = ref(4)
 const length = ref(0)
+const bounds = ref([[24.396308, -124.848974], [49.384358, -66.885444]])
 
 function getDistanceFromLatLonInKm(lat1 : number, lon1 : number, lat2 : number, lon2 : number) {
-  var R = 6371; // Radius of the earth in km
-  var dLat = deg2rad(lat2-lat1);  // deg2rad below
+  var R = 6371;
+  var dLat = deg2rad(lat2-lat1); 
   var dLon = deg2rad(lon2-lon1); 
   var a = 
     Math.sin(dLat/2) * Math.sin(dLat/2) +
@@ -69,7 +80,7 @@ function getDistanceFromLatLonInKm(lat1 : number, lon1 : number, lat2 : number, 
     Math.sin(dLon/2) * Math.sin(dLon/2)
     ; 
   var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)); 
-  var d = R * c; // Distance in km
+  var d = R * c; 
   return d;
 }
 
@@ -150,7 +161,6 @@ const spanning_tree = computed(function () {
   const edges = [];
   const vertices = selected_csas.value
 
-  // Find edges between all pairs of vertices
   for (let i = 0; i < vertices.length; i++) {
     const vertex1 = vertices[i];
     const vertex1_data = CSAs[vertex1];
