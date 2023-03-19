@@ -33,7 +33,7 @@
           v-for="csa in selected_csas"
           :key="csa"
           :lat-lng="[CSAs[csa]['Latitude'], CSAs[csa]['Longitude']]" 
-          :radius="CSAs[csa]['Population']**0.75 / 10000 > 1.5 ? CSAs[csa]['Population']**0.75 / 10000 : 1.5"
+          :radius="CSAs[csa]['Population']**0.5 / 150 > 1.5 ? CSAs[csa]['Population']**0.5 / 150 : 1.5"
           :options="lineOptions"
         >
           <l-popup class="text-center"> {{ csa }} <br /> {{ CSAs[csa]['Population'].toLocaleString("en-US") }} </l-popup>
