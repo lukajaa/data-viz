@@ -22,7 +22,7 @@
         style="background-color:rgb(238, 242, 255);"
         :options="{ zoomControl: false, scrollWheelZoom: false, dragging: false, doubleClickZoom: false, touchZoom: false, }"
       >
-        <l-geo-json :geojson="us_map" :options-style="geoJsonStyles" />
+        <l-geo-json :geojson="us_map" :options="geoJsonStyles" />
         <l-polyline
           v-for="edge in spanning_tree"
           :key="edge"
@@ -34,7 +34,7 @@
           :key="csa"
           :lat-lng="[CSAs[csa]['Latitude'], CSAs[csa]['Longitude']]" 
           :radius="CSAs[csa]['Population']**0.75 / 10000 > 1.5 ? CSAs[csa]['Population']**0.75 / 10000 : 1.5"
-          :options="{ fillColor: '#a855f7', fillOpacity: 0.5, color: '#a855f7', weight: 1 }"
+          :options="lineOptions"
         >
           <l-popup class="text-center"> {{ csa }} <br /> {{ CSAs[csa]['Population'].toLocaleString("en-US") }} </l-popup>
         </l-circle-marker>
@@ -84,37 +84,91 @@ const geoJsonStyles = {
   weight: 1,
 }
 
-const spanning_tree = computed(function () {
-  if (selected_csas.value.length <= 1) {
-    return []
+const lineOptions = { 
+  fillColor: '#a855f7', 
+  fillOpacity: 0.5, 
+  color: '#a855f7', 
+  weight: 1
+}
+
+function kruskal(graph) {
+  // Initialize an array to hold the edges of the minimum spanning tree
+  const mst = [];
+  
+  // Sort the edges by weight in non-decreasing order
+  const edges = graph.edges.sort((a, b) => a.weight - b.weight);
+  
+  // Initialize a disjoint-set data structure to track which vertices belong to which connected components
+  const dsu = new DisjointSetUnion(graph.vertices);
+  
+  // Iterate over the edges in non-decreasing order of weight
+  for (const edge of edges) {
+    const u = edge.source;
+    const v = edge.target;
+    
+    // If the endpoints of the edge are in different connected components, add the edge to the minimum spanning tree
+    if (dsu.find(u) !== dsu.find(v)) {
+      mst.push(edge);
+      dsu.union(u, v);
+    }
   }
-  var forest = []
-  var length_of = 0
-  var vertices = [...selected_csas.value]
-  while (vertices.length > 0) {
-    var vertex = vertices.pop()
-    var vertex_data = CSAs[vertex]
-    var closest_vertex = null
-    var closest_distance = 1000000
+  
+  // Return the edges of the minimum spanning tree
+  return mst;
+}
+
+class DisjointSetUnion {
+  constructor(vertices) {
+    // Initialize each vertex as its own connected component
+    this.parent = {};
     for (const v of vertices) {
-      var v_data = CSAs[v]
-      var distance = getDistanceFromLatLonInKm(vertex_data['Latitude'], vertex_data['Longitude'], v_data['Latitude'], v_data['Longitude'])
-      if (distance < closest_distance) {
-        closest_distance = distance
-        closest_vertex = v
-      }
+      this.parent[v] = v;
     }
-    if (closest_vertex == null) {
-      continue
-    }
-    length_of += closest_distance
-    forest.push([vertex, closest_vertex])
   }
-  length.value = length_of / 1.6
-  return forest
+  
+  find(x) {
+    // If x is not the parent of itself, recursively find the parent of its parent
+    if (this.parent[x] !== x) {
+      this.parent[x] = this.find(this.parent[x]);
+    }
+    return this.parent[x];
+  }
+  
+  union(x, y) {
+    // Find the parents of the connected components containing x and y
+    const px = this.find(x);
+    const py = this.find(y);
+    
+    // If x and y are not already in the same connected component, merge the components
+    if (px !== py) {
+      this.parent[px] = py;
+    }
+  }
+}
+
+const spanning_tree = computed(function () {
+  const edges = [];
+  const vertices = selected_csas.value
+
+  // Find edges between all pairs of vertices
+  for (let i = 0; i < vertices.length; i++) {
+    const vertex1 = vertices[i];
+    const vertex1_data = CSAs[vertex1];
+    for (let j = i + 1; j < vertices.length; j++) {
+      const vertex2 = vertices[j];
+      const vertex2_data = CSAs[vertex2];
+      const distance = getDistanceFromLatLonInKm(vertex1_data['Latitude'], vertex1_data['Longitude'], vertex2_data['Latitude'], vertex2_data['Longitude']);
+      edges.push({source: vertex1, target: vertex2, weight: distance});
+    }
+  }
+
+  const graph = {vertices, edges};
+  const mst = kruskal(graph);
+  const spanning_tree = mst.map(edge => [edge.source, edge.target]);
+  
+  length.value = mst.reduce((acc, edge) => acc + edge.weight, 0) / 1.6;
+  return spanning_tree
 })
-
-
 
 const network_score = computed(function () {
     if (selected_csas.value.length <= 1) {
