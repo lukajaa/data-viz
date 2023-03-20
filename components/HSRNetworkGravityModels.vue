@@ -17,10 +17,10 @@
       <l-map 
         ref="map" 
         :zoom="zoom" 
-        :center="[39.8283, -98.5795]"
+        :center="[39.833333, -98.583333]"
         :useGlobalLeaflet="false" 
         style="background-color:rgb(238, 242, 255);"
-        :options="{ scrollWheelZoom: false, maxBounds: bounds, maxBoundsViscosity: 1.0, minZoom: 4 }"
+        :options="{ scrollWheelZoom: false, maxBounds: bounds, maxBoundsViscosity: 1.0, minZoom: 3 }"
       >
         <l-geo-json :geojson="us_map" :options="geoJsonStyles" />
         <l-polyline
@@ -44,12 +44,13 @@
     <p>This is an interactive map that creates a hypothetical high speed rail network given a list of combined statistical areas. The overall network score is calculated using gravity models. The network path is calculated using Kruskal's Algorithm to find the minimum spanning tree.</p>
     <p class="mt-5 font-bold">How is network score calculated?</p>
     <p>A gravity model is created between each city in the network with an intial equation of (population_of_CSA_1^0.8 * population_of_CSA_2^0.8) / distance_between_CSAs. Next, a distance modifier was calculated with an optimal distance of 250 miles (400 km) and a minimum of 0.1 for distant areas. This multiplier was applied to each of the pairs and the resulting scores were summed. Finally, an overall multiplier was applied according to Metcalfe's Law. The multiplier follows a sigmoid curve that maxes out at around 15 stations.</p>
+    <p>For the gravity equation, the populations of cities are raised to the power of 0.8 in order to account for the fact that cities with large populations also take up large areas of land, making them less efficient. The distance modifier is a number between 0 and 1 that scales according to the distance from 250 miles or 400 kilometers. The longest distance applicable is 620 miles or 1000 km. The sigmoid function used for Metcalfe's law is (- 5) / (1 + Math.E**(2/3 * nodes - 5)) + 10. </p>
     <p class="mt-5 font-bold">How is the network path calculated?</p>
     <p>The network path is calculated using Kruskal's Algorithm to find the minimum spanning tree. The algorithm is given a graph with each CSA as a vertex and each edge is weighted by the distance between the two connected CSAs. The algorithm then finds the minimum spanning tree by adding the lowest weighted edge that does not create a cycle. The algorithm is run until all vertices are connected.</p>
     <p class="mt-5 font-bold">Problems</p>
-    <p>Adding too many cities too quickly can break the map.</p>
-    <p class="mt-5 font-bold">Hypothetical HSR Network with every CSA</p>
-    <img class="mx-auto" src="../assets/images/full_map.png" alt="hsr_network" />
+    <p>Adding too many cities too quickly can break the map due to the problem of having to compute a new spanning tree whenever a station is added.</p>
+    <p class="mt-5 font-bold">Data Source</p>
+    <p>All data including population, geographic boundaries, and CSA centerpoints were retrieved from the <a href="https://data.census.gov/" target="_blank">Census Bureau Website</a>.</p>
   </div>
 </template>
 
@@ -204,7 +205,7 @@ const network_score = computed(function () {
             } else if (distance_between <= 1000) {
               modifier = 1 - distance_between / 1000
             } else {
-              modifier = 0.1
+              modifier = 0
             }
             gravity = gravity * modifier
             score += gravity

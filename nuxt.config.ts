@@ -3,8 +3,11 @@ export default defineNuxtConfig({
     target: 'static',
     modules: [
         '@nuxtjs/tailwindcss',
+        'nuxt-icon'
     ],
-    head: {
-        title: 'Data Visualization',
+    app: {
+        head: {
+            title: 'Data Visualization',
+        }
     }
 })
