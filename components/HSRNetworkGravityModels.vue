@@ -33,7 +33,7 @@
           v-for="csa in selected_csas"
           :key="csa"
           :lat-lng="[CSAs[csa]['Latitude'], CSAs[csa]['Longitude']]" 
-          :radius="CSAs[csa]['Population']**0.5 / 150 > 1.5 ? CSAs[csa]['Population']**0.5 / 150 : 1.5"
+          :radius="CSAs[csa]['Population']**0.5 / 125 > 2 ? CSAs[csa]['Population']**0.5 / 150 : 2"
           :options="lineOptions"
         >
           <l-popup class="text-center"> {{ csa }} <br /> {{ CSAs[csa]['Population'].toLocaleString("en-US") }} </l-popup>
@@ -62,7 +62,7 @@ import Multiselect from '@vueform/multiselect'
 // import leaflet
 import "leaflet/dist/leaflet.css";
 import { LMap, LGeoJson, LCircleMarker, LPopup, LPolyline } from "@vue-leaflet/vue-leaflet";
-
+// import geojson
 import us_map from '../assets/geojson/us_outline.json';
 
 const cities = Object.keys(CSAs)
