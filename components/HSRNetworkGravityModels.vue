@@ -13,6 +13,8 @@
     <p class="mt-5 font-bold">Stations: {{ selected_csas.length }}</p>
     <p class="mt-5 font-bold">Network Length: {{ Math.round(length).toLocaleString("en-US") }} miles</p>
 
+    <button @click="selected_csas = []" class="mt-5 bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded ">Clear</button>
+
     <div style="height:500px; width: 100%" class="mt-5">
       <l-map 
         ref="map" 

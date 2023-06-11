@@ -1,9 +1,9 @@
 <template>
-  <div :class="['bg-' + color_theme + '-50']">
+  <div class="bg-red-50">
     <div class="p-10 mx-auto min-h-screen h-full lg:w-9/12 xl:w-6/12 text-center">
       <!-- Header -->
       <p class="text-5xl mb-5">{{ dataset  == '' ? 'Data Visualization' : dataset }}</p>
-      <select v-model="dataset" :class="['outline', 'outline-offset-2', 'outline-' + color_theme + '-500', 'rounded', 'mb-10', 'text-center']">
+      <select v-model="dataset" class="outline outline-offset-2 outline-red-500 rounded mb-10 text-center">
         <option value="">Pick a dataset</option>
         <option disabled>Personal</option>
         <option>Mindfulness</option>
@@ -17,7 +17,7 @@
       <div v-if="dataset == ''">
         A collection of various datasets that I am interested in, visualized with Chart.js and Leaflet.
         <div class="flex flex-col text-left mt-5 space-y-5">
-          <div class="flex flex-row rounded bg-indigo-600 text-white p-3 mx-auto transition ease-in-out hover:scale-105 w-full" @click="dataset='HSR Network Gravity Models'">
+          <div class="flex flex-row rounded bg-red-600 text-white p-3 mx-auto transition ease-in-out hover:scale-105 w-full" @click="dataset='HSR Network Gravity Models'">
             <div class="flex flex-col justify-center">
               <Icon name="material-symbols:train-outline" size="5em" />
             </div>
@@ -26,7 +26,7 @@
               <p class="text-md">An interactive map displaying strengths and sizes of hypothetical high speed rail networks in the US.</p>
             </div>
           </div>
-          <div class="flex flex-row rounded bg-indigo-500 text-white p-3 mx-auto transition ease-in-out hover:scale-105 w-full" @click="dataset='Mindfulness'">
+          <div class="flex flex-row rounded bg-red-500 text-white p-3 mx-auto transition ease-in-out hover:scale-105 w-full" @click="dataset='Mindfulness'">
             <div class="flex flex-col justify-center">
               <Icon name="mdi:meditation" size="5em" />
             </div>
@@ -35,7 +35,7 @@
               <p class="text-md">A graphical representation of mindfulness lengths at the Bay School of San Francisco.</p>
             </div>
           </div>
-          <div class="flex flex-row rounded bg-indigo-400 text-white p-3 mx-auto transition ease-in-out hover:scale-105 w-full" @click="dataset='HSR Gravity Models'">
+          <div class="flex flex-row rounded bg-red-400 text-white p-3 mx-auto transition ease-in-out hover:scale-105 w-full" @click="dataset='HSR Gravity Models'">
             <div class="flex flex-col justify-center">
               <Icon name="material-symbols:location-city" size="5em" />
             </div>
@@ -44,7 +44,7 @@
               <p class="text-md">An graphical representation of the best pairs of metropolitan areas for building high speed rail.</p>
             </div>
           </div>
-          <div class="flex flex-row rounded bg-indigo-300 text-white p-3 mx-auto transition ease-in-out hover:scale-105 w-full" @click="dataset='Gravity Models'">
+          <div class="flex flex-row rounded bg-red-300 text-white p-3 mx-auto transition ease-in-out hover:scale-105 w-full" @click="dataset='Gravity Models'">
             <div class="flex flex-col justify-center">
               <Icon name="majesticons:planet-ring-2" size="5em" />
             </div>
@@ -70,8 +70,6 @@
 
 <script setup lang="ts">
 const dataset = ref("")
-
-const color_theme = ref('indigo')
 
 // watch for changes in dataset
 watch(dataset, (val) => {
