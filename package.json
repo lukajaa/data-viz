@@ -12,6 +12,7 @@
     "@vue-leaflet/vue-leaflet": "^0.9.0",
     "leaflet": "^1.9.3",
     "nuxt": "^3.2.3",
+    "nuxt-gtag": "^0.5.7",
     "nuxt-icon": "^0.3.3"
   },
   "dependencies": {
